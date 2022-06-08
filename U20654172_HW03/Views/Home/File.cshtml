@@ -1,0 +1,38 @@
+﻿@using U20654172_HW03.Models
+@{
+    ViewBag.Title = "File";
+}
+<div class="row">
+    <h1>Files of type Document</h1>
+    <p class="lead">Documents should be displayed from the /Media/Documents folder to the table below</p>
+</div>
+
+<div class="row" style="background-color:aqua;">
+    <h2>Media/Documents folder</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">File Name </th>
+                <th scope="col">Download Option </th>
+                <th scope="col">Delete Option </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jemma_biography.pdf</td>
+                <td><button type="button" class="btn btn-success">Download</button></td>
+                <td><button type="button" class="btn btn-danger">DELETE</button></td>
+            </tr>
+            <tr>
+                <td>Tim_Biography.pdf</td>
+                <td><button type="button" class="btn btn-success">Download</button></td>
+                <td><button type="button" class="btn btn-danger">DELETE</button></td>
+            </tr>
+            <tr>
+                <td>Benny_StudyGuide.pdf</td>
+                <td><button type="button" class="btn btn-success">Download</button></td>
+                <td><button type="button" class="btn btn-danger">DELETE</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

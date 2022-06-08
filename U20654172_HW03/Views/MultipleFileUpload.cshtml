@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "MultipleFileUpload";
+}
+<div class="well-sm">
+    <h2>MultipleFileUpload</h2>
+    <p>
+        This is for uploading multiple files to the "App_Data/uploads/" folder
+    </p>
+</div>
+
+<div class="well-sm">
+    @using (Html.BeginForm("Index", "MultiUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+         {
+          
+         }
+</div>
+

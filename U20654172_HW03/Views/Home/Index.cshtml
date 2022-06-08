@@ -1,0 +1,36 @@
+﻿@using U20654172_HW03.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row" style="background-color:aqua;">
+    <div class="col-md-4">
+        <h2>Description</h2>
+        <p>
+          Having to upload files from a client's computer to a remote serve is quite a challenging task.
+          There are a variety of upload componemts and here we will be exploring which upload approach is better to use.
+        </p>
+    </div>
+    <div class="col-md-4"> 
+        <h2>Option Selection</h2>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/Form-data" })) { }
+
+    </div>
+        <input type="radio" name="document" value="Document" />
+        <lable for="document">Document</lable>
+        <br />
+        <input type="radio" name="image" value="Image" />
+        <lable for="image">Image</lable>
+        <br />
+        <input type="radio" name="video" value="Video" />
+        <lable for="video">Video</lable>
+        <br />
+    <div>
+        <br />
+        <div>
+            <input type="file" name="Files" value="Browse..." />
+            <br />
+            <input type="submit" name="Submit" value="Submit" />
+        </div>
+    </div>
+</div>
